@@ -38,6 +38,7 @@ Install one standalone skill:
 ```bash
 npx skills add instructa/agent-skills --skill app-spec-packager --agent codex
 npx skills add instructa/agent-skills --skill debug-lldb --agent codex
+npx skills add instructa/agent-skills --skill electron-live-test --agent codex
 npx skills add instructa/agent-skills --skill gh-repo-bootstrap --agent codex
 npx skills add instructa/agent-skills --skill git-safe-workflow --agent codex
 npx skills add instructa/agent-skills --skill gitwhat --agent codex
@@ -71,6 +72,7 @@ Install one standalone skill:
 ```bash
 npx skills add instructa/agent-skills --skill app-spec-packager --agent claude-code
 npx skills add instructa/agent-skills --skill debug-lldb --agent claude-code
+npx skills add instructa/agent-skills --skill electron-live-test --agent claude-code
 npx skills add instructa/agent-skills --skill gh-repo-bootstrap --agent claude-code
 npx skills add instructa/agent-skills --skill git-safe-workflow --agent claude-code
 npx skills add instructa/agent-skills --skill gitwhat --agent claude-code
@@ -104,6 +106,7 @@ Install one standalone skill:
 ```bash
 npx skills add instructa/agent-skills --skill app-spec-packager --agent cursor
 npx skills add instructa/agent-skills --skill debug-lldb --agent cursor
+npx skills add instructa/agent-skills --skill electron-live-test --agent cursor
 npx skills add instructa/agent-skills --skill gh-repo-bootstrap --agent cursor
 npx skills add instructa/agent-skills --skill git-safe-workflow --agent cursor
 npx skills add instructa/agent-skills --skill gitwhat --agent cursor
@@ -147,6 +150,7 @@ These skills are kept as separate artifacts because they are useful independentl
 
 - `app-spec-packager`: create production-ready app specification packages for coding agents.
 - `debug-lldb`: capture and analyze LLDB/GDB backtraces for hangs and high-CPU loops.
+- `electron-live-test`: live-test headed Electron apps with native-devtools-mcp and CDP.
 - `gh-repo-bootstrap`: create a GitHub repo and bootstrap a local project.
 - `git-safe-workflow`: inspect, stage, commit, and push safely when explicitly requested.
 - `gitwhat`: print a compact git workspace snapshot.
@@ -172,6 +176,7 @@ skills/
   architecture-ownership/    # bundled in regenrek.agentic-engineer-core
   consolidate-test-suites/   # bundled in regenrek.agentic-engineer-core
   debug-lldb/
+  electron-live-test/
   find-duplicate-ownership/  # bundled in regenrek.agentic-engineer-core
   hard-cut/                  # bundled in regenrek.agentic-engineer-core
   root-cause-finder/         # bundled in regenrek.agentic-engineer-core
